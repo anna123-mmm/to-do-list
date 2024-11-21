@@ -8,6 +8,4 @@ C:\Users\ASSUS\Documents\todolist\todolist\obj\Debug\todolist.csproj.GenerateRes
 C:\Users\ASSUS\Documents\todolist\todolist\obj\Debug\todolist.csproj.CoreCompileInputs.cache
 C:\Users\ASSUS\Documents\todolist\todolist\obj\Debug\todolist.exe
 C:\Users\ASSUS\Documents\todolist\todolist\obj\Debug\todolist.pdb
-C:\Users\ASSUS\Documents\todolist\todolist\obj\Debug\todolist.FrmAllTask.resources
-C:\Users\ASSUS\Documents\todolist\todolist\obj\Debug\todolist.frmCompleted.resources
-C:\Users\ASSUS\Documents\todolist\todolist\obj\Debug\todolist.frmIncomplete.resources
+C:\Users\ASSUS\Documents\todolist\todolist\obj\Debug\todolist.FrmAddTask.resources
