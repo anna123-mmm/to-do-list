@@ -29,45 +29,45 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.btnTarget = new System.Windows.Forms.Button();
             this.panelTask = new System.Windows.Forms.Panel();
             this.btnIncomplete = new System.Windows.Forms.Button();
             this.btnCompleted = new System.Windows.Forms.Button();
             this.btnAll = new System.Windows.Forms.Button();
+            this.btnTask = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.labelDate = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.dgvToDo = new System.Windows.Forms.DataGridView();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.lblStatus = new System.Windows.Forms.Label();
-            this.btnExit = new System.Windows.Forms.Button();
-            this.btnTarget = new System.Windows.Forms.Button();
-            this.btnTask = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Column4 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.lblStatus = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panelTask.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvToDo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -84,6 +84,43 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 594);
             this.panel1.TabIndex = 0;
+            // 
+            // btnExit
+            // 
+            this.btnExit.BackColor = System.Drawing.Color.Transparent;
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(210)))));
+            this.btnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(210)))));
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.ForeColor = System.Drawing.Color.Transparent;
+            this.btnExit.Image = global::todolist.Properties.Resources.exit;
+            this.btnExit.Location = new System.Drawing.Point(79, 553);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(38, 29);
+            this.btnExit.TabIndex = 6;
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // btnTarget
+            // 
+            this.btnTarget.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnTarget.FlatAppearance.BorderSize = 0;
+            this.btnTarget.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(210)))));
+            this.btnTarget.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(210)))));
+            this.btnTarget.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTarget.Font = new System.Drawing.Font("Arial Narrow", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTarget.ForeColor = System.Drawing.Color.White;
+            this.btnTarget.Image = global::todolist.Properties.Resources.champion;
+            this.btnTarget.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTarget.Location = new System.Drawing.Point(0, 295);
+            this.btnTarget.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnTarget.Name = "btnTarget";
+            this.btnTarget.Size = new System.Drawing.Size(200, 42);
+            this.btnTarget.TabIndex = 5;
+            this.btnTarget.Text = "            Target";
+            this.btnTarget.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTarget.UseVisualStyleBackColor = true;
+            this.btnTarget.Click += new System.EventHandler(this.btnTarget_Click);
             // 
             // panelTask
             // 
@@ -157,6 +194,27 @@
             this.btnAll.UseVisualStyleBackColor = true;
             this.btnAll.Click += new System.EventHandler(this.btnAll_Click);
             // 
+            // btnTask
+            // 
+            this.btnTask.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnTask.FlatAppearance.BorderSize = 0;
+            this.btnTask.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(210)))));
+            this.btnTask.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(210)))));
+            this.btnTask.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTask.Font = new System.Drawing.Font("Arial Narrow", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTask.ForeColor = System.Drawing.Color.White;
+            this.btnTask.Image = global::todolist.Properties.Resources.list;
+            this.btnTask.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTask.Location = new System.Drawing.Point(0, 125);
+            this.btnTask.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnTask.Name = "btnTask";
+            this.btnTask.Size = new System.Drawing.Size(200, 42);
+            this.btnTask.TabIndex = 3;
+            this.btnTask.Text = "            Task";
+            this.btnTask.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTask.UseVisualStyleBackColor = true;
+            this.btnTask.Click += new System.EventHandler(this.btnTask_Click);
+            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.label1);
@@ -178,6 +236,17 @@
             this.label1.Size = new System.Drawing.Size(94, 25);
             this.label1.TabIndex = 1;
             this.label1.Text = "My ToDo";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::todolist.Properties.Resources.to_do_list;
+            this.pictureBox1.Location = new System.Drawing.Point(22, 32);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(54, 62);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // panel3
             // 
@@ -212,14 +281,14 @@
             this.dgvToDo.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(229)))), ((int)(((byte)(235)))));
             this.dgvToDo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvToDo.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(112)))), ((int)(((byte)(146)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(112)))), ((int)(((byte)(146)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvToDo.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(112)))), ((int)(((byte)(146)))));
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(112)))), ((int)(((byte)(146)))));
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvToDo.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.dgvToDo.ColumnHeadersHeight = 30;
             this.dgvToDo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvToDo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -229,44 +298,116 @@
             this.Column3,
             this.Column5,
             this.Column1});
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(179)))), ((int)(((byte)(199)))));
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvToDo.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(179)))), ((int)(((byte)(199)))));
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvToDo.DefaultCellStyle = dataGridViewCellStyle16;
             this.dgvToDo.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnKeystroke;
             this.dgvToDo.EnableHeadersVisualStyles = false;
             this.dgvToDo.GridColor = System.Drawing.Color.White;
             this.dgvToDo.Location = new System.Drawing.Point(227, 158);
             this.dgvToDo.MultiSelect = false;
             this.dgvToDo.Name = "dgvToDo";
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(210)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(36)))), ((int)(((byte)(108)))));
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(179)))), ((int)(((byte)(199)))));
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(36)))), ((int)(((byte)(108)))));
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvToDo.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(210)))));
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(36)))), ((int)(((byte)(108)))));
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(179)))), ((int)(((byte)(199)))));
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(36)))), ((int)(((byte)(108)))));
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvToDo.RowHeadersDefaultCellStyle = dataGridViewCellStyle17;
             this.dgvToDo.RowHeadersVisible = false;
             this.dgvToDo.RowHeadersWidth = 51;
             this.dgvToDo.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(210)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(36)))), ((int)(((byte)(108)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(179)))), ((int)(((byte)(199)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(36)))), ((int)(((byte)(108)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvToDo.RowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(210)))));
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(36)))), ((int)(((byte)(108)))));
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(179)))), ((int)(((byte)(199)))));
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(36)))), ((int)(((byte)(108)))));
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvToDo.RowsDefaultCellStyle = dataGridViewCellStyle18;
             this.dgvToDo.RowTemplate.DividerHeight = 2;
             this.dgvToDo.RowTemplate.Height = 24;
             this.dgvToDo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvToDo.Size = new System.Drawing.Size(801, 397);
             this.dgvToDo.TabIndex = 2;
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "Done";
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.NullValue = false;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column4.DefaultCellStyle = dataGridViewCellStyle11;
+            this.Column4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Column4.HeaderText = "";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 50;
+            // 
+            // Column6
+            // 
+            this.Column6.DataPropertyName = "Task";
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column6.DefaultCellStyle = dataGridViewCellStyle12;
+            this.Column6.HeaderText = "Task";
+            this.Column6.MinimumWidth = 6;
+            this.Column6.Name = "Column6";
+            this.Column6.Width = 175;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "StartDate";
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column2.DefaultCellStyle = dataGridViewCellStyle13;
+            this.Column2.HeaderText = "Start Date";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 135;
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "DueDate";
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column3.DefaultCellStyle = dataGridViewCellStyle14;
+            this.Column3.HeaderText = "Due Date";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 135;
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "Category";
+            this.Column5.HeaderText = "Category";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Column5.Width = 135;
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "Description";
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column1.DefaultCellStyle = dataGridViewCellStyle15;
+            this.Column1.FillWeight = 200F;
+            this.Column1.HeaderText = "Description";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 170;
             // 
             // panel4
             // 
@@ -303,147 +444,6 @@
             this.lblStatus.TabIndex = 13;
             this.lblStatus.Text = "TO DO LIST ";
             // 
-            // btnExit
-            // 
-            this.btnExit.BackColor = System.Drawing.Color.Transparent;
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(210)))));
-            this.btnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(210)))));
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.ForeColor = System.Drawing.Color.Transparent;
-            this.btnExit.Image = global::todolist.Properties.Resources.exit;
-            this.btnExit.Location = new System.Drawing.Point(79, 553);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(38, 29);
-            this.btnExit.TabIndex = 6;
-            this.btnExit.UseVisualStyleBackColor = false;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // btnTarget
-            // 
-            this.btnTarget.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnTarget.FlatAppearance.BorderSize = 0;
-            this.btnTarget.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(210)))));
-            this.btnTarget.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(210)))));
-            this.btnTarget.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTarget.Font = new System.Drawing.Font("Arial Narrow", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTarget.ForeColor = System.Drawing.Color.White;
-            this.btnTarget.Image = global::todolist.Properties.Resources.champion;
-            this.btnTarget.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTarget.Location = new System.Drawing.Point(0, 295);
-            this.btnTarget.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnTarget.Name = "btnTarget";
-            this.btnTarget.Size = new System.Drawing.Size(200, 42);
-            this.btnTarget.TabIndex = 5;
-            this.btnTarget.Text = "            Target";
-            this.btnTarget.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTarget.UseVisualStyleBackColor = true;
-            this.btnTarget.Click += new System.EventHandler(this.btnTarget_Click);
-            // 
-            // btnTask
-            // 
-            this.btnTask.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnTask.FlatAppearance.BorderSize = 0;
-            this.btnTask.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(210)))));
-            this.btnTask.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(194)))), ((int)(((byte)(210)))));
-            this.btnTask.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTask.Font = new System.Drawing.Font("Arial Narrow", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTask.ForeColor = System.Drawing.Color.White;
-            this.btnTask.Image = global::todolist.Properties.Resources.list;
-            this.btnTask.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTask.Location = new System.Drawing.Point(0, 125);
-            this.btnTask.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnTask.Name = "btnTask";
-            this.btnTask.Size = new System.Drawing.Size(200, 42);
-            this.btnTask.TabIndex = 3;
-            this.btnTask.Text = "            Task";
-            this.btnTask.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTask.UseVisualStyleBackColor = true;
-            this.btnTask.Click += new System.EventHandler(this.btnTask_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::todolist.Properties.Resources.to_do_list;
-            this.pictureBox1.Location = new System.Drawing.Point(22, 32);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(54, 62);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "Done";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.NullValue = false;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Column4.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Column4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Column4.HeaderText = "";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 50;
-            // 
-            // Column6
-            // 
-            this.Column6.DataPropertyName = "Task";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Column6.DefaultCellStyle = dataGridViewCellStyle3;
-            this.Column6.HeaderText = "Task";
-            this.Column6.MinimumWidth = 6;
-            this.Column6.Name = "Column6";
-            this.Column6.Width = 175;
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "StartDate";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Column2.DefaultCellStyle = dataGridViewCellStyle4;
-            this.Column2.HeaderText = "Start Date";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 135;
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "DueDate";
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Column3.DefaultCellStyle = dataGridViewCellStyle5;
-            this.Column3.HeaderText = "Due Date";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 135;
-            // 
-            // Column5
-            // 
-            this.Column5.DataPropertyName = "Category";
-            this.Column5.HeaderText = "Category";
-            this.Column5.MinimumWidth = 6;
-            this.Column5.Name = "Column5";
-            this.Column5.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Column5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Column5.Width = 135;
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "Description";
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Column1.DefaultCellStyle = dataGridViewCellStyle6;
-            this.Column1.FillWeight = 200F;
-            this.Column1.HeaderText = "Description";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 170;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -463,15 +463,16 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panelTask.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvToDo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
