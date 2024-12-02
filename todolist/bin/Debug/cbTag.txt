@@ -1,3 +1,10 @@
 hài
+<<<<<<< HEAD
 minh
 ok
+=======
+khùn
+
+minh
+
+>>>>>>> 214b152779cea21d8fb4ce7627d2df348cd12290
